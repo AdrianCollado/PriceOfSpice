@@ -12,6 +12,6 @@ public class PriceOfSpiceBlocks {
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
-
+        blockSpice.initModel();
     }
 }

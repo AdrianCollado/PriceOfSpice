@@ -7,11 +7,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PriceOfSpiceItems {
 
-    @GameRegistry.ObjectHolder("pos:spice")
+    @GameRegistry.ObjectHolder("pos:item_spice")
     public static ItemSpice itemSpice;
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
-
+        itemSpice.initModel();
     }
 }
