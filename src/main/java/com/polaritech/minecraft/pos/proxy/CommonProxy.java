@@ -1,7 +1,12 @@
 package com.polaritech.minecraft.pos.proxy;
 
+import com.polaritech.minecraft.pos.PriceOfSpice;
+import com.polaritech.minecraft.pos.PriceOfSpiceBlocks;
+import com.polaritech.minecraft.pos.blocks.BlockSpice;
+import com.polaritech.minecraft.pos.items.ItemSpice;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -36,12 +41,14 @@ public class CommonProxy {
     }
 
     @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Item> event) {
-
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
+        event.getRegistry().register(new BlockSpice());
     }
 
     @SubscribeEvent
-    public static void registerItems(RegistryEvent.Register<Block> event) {
+    public static void registerItems(RegistryEvent.Register<Item> event) {
+        event.getRegistry().register(new ItemSpice());
 
+        event.getRegistry().register(new ItemBlock(PriceOfSpiceBlocks.blockSpice).setRegistryName(PriceOfSpiceBlocks.blockSpice.getRegistryName()));
     }
 }
