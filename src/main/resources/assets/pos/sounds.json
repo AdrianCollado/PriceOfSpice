@@ -1,6 +1,6 @@
 {
     "christmas_music": {
-        "category": "block",
+        "category": "music",
         "sounds": [
             {
                 "name": "pos:music/christmas_music",
