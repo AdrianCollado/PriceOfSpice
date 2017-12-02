@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pos",
+  "name": "Price of Spice",
+  "description": "The Price of Spice is all you'll need.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["narwhalfire", "Exxion", "ChosenOreo"],
+  "credits": "Your friends at RCOS",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
