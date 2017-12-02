@@ -1,0 +1,11 @@
+{
+    "christmas_music": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "pos:music/christmas_music",
+                "stream": true
+            }
+        ]
+    }
+}
